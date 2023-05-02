@@ -1,0 +1,62 @@
+section {
+  min-height: screen;
+  padding: 4rem 7% 1rem;
+  color: #fff;
+
+
+}
+
+.heading {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 850;
+}
+
+span {
+  color: #0ef;
+}
+
+.services {
+
+}
+
+.services h2 {
+  margin-bottom: 3rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+}
+
+.services-container h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 1rem 0 1rem;
+}
+
+.services-container .service-box {
+  flex: 1 1 30rem;
+  background: #323946;
+  padding: 1.5rem 2rem 3rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid #1f242d;
+  max-width: 36rem;
+  transition: .5s ease;
+}
+
+.services-container .service-box:hover {
+  border-color: #0ef;
+  transform: scale(1.02);
+}
+
+.code {
+  font-size: 3rem;
+  color: #0ef;
+}

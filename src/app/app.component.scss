@@ -1,0 +1,43 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+body {
+  background-color: #1f242d;
+}
+
+.btn {
+  display: inline-block;
+  padding: .3rem 1.5rem;
+  background: #0ef;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #0ef;
+  font-size: 1rem;
+  color: #1f242d;
+  letter-spacing: .05rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.nav-links a {
+  font-size: 1rem;
+  margin-left: 2rem;
+  transition: .3s;
+  color: #fff;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #0ef
+}

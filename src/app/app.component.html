@@ -1,0 +1,35 @@
+<body class="font-[Poppins] bg-[#1f242d] h-screen">
+  <header class="bg-[#1f242d]">
+      <nav class=" flex justify-between items-center w-[92%]  mx-auto">
+          <div>
+            <img class="w-16 cursor-pointer" src="../assets/img/vinlogo.png" alt="...">
+          </div>
+          <div
+              class="nav-links duration-500 md:static absolute text-white  md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+              <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                  <li>
+                      <a class="active" routerLink="home">Home</a>
+                  </li>
+                  <li>
+                      <a class="" routerLink="about">About</a>
+                  </li>
+                  <li>
+                      <a class="" routerLink="servs" >Services</a>
+                  </li>
+                  <li>
+                      <a class="" routerLink="contact">Contact</a>
+                  </li>
+
+              </ul>
+          </div>
+          <div class="flex items-center gap-6">
+              <button class="btn" (click)="downloadMyFile()">Download CV</button>
+
+          </div>
+        </nav>
+        <router-outlet></router-outlet>
+  </header>
+
+</body>
+
+
