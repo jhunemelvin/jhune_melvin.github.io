@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-portfolio';
+  faBars = faBars;
+  faXmark = faXmark;
 
   downloadMyFile() {
     const link = document.createElement('a');
