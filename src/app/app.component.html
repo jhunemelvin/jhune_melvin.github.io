@@ -1,5 +1,4 @@
-<body class="font-[Poppins] bg-[#1f242d] h-screen">
-  <header class="bg-[#1f242d]">
+<header class=" bg-[#1f242d]">
       <nav class=" flex justify-between items-center w-[92%]  mx-auto">
           <div>
             <img class="w-16 cursor-pointer" src="assets/img/vinlogo.png">
@@ -8,23 +7,44 @@
               class="nav-links duration-500 md:static absolute text-white  md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
               <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                   <li>
-                      <a class="" routerLink="home">Home</a>
+                      <a routerLink="home" class="active">Home</a>
                   </li>
                   <li>
-                      <a class="" routerLink="about">About</a>
+                      <a routerLink="about">About</a>
                   </li>
                   <li>
-                      <a class="" routerLink="servs" >Services</a>
+                      <a routerLink="servs" >Services</a>
                   </li>
                   <li>
-                      <a class="" routerLink="contact">Contact</a>
+                      <a routerLink="contact">Contact</a>
                   </li>
+
               </ul>
           </div>
           <div class="flex items-center gap-6">
               <button class="btn" (click)="downloadMyFile()">Download CV</button>
+
+          <div class="toggle-btn" (click)="toggleMenu()">
+              <i class=""><fa-icon [icon]="isMenuOpen ? faXmark : faBars"></fa-icon></i>
+          </div>
+          </div>
+          <div class="dropdown_menu" [class.open]="isMenuOpen">
+              <li>
+                <button class="togglebtn" routerLink="home" (click)="closeMenu()">Home</button>
+              </li>
+              <li>
+                <button class="togglebtn" routerLink="about" (click)="closeMenu()">About</button>
+              </li>
+              <li>
+                <button class="togglebtn" routerLink="servs" (click)="closeMenu()">Services</button>
+              </li>
+              <li>
+                <button class="togglebtn" routerLink="contact" (click)="closeMenu()">Contact</button>
+              </li>
+              <li><button class="btn" (click)="downloadMyFile()" (click)="closeMenu()">Download CV</button></li>
           </div>
         </nav>
-        <router-outlet></router-outlet>
-  </header>
-</body>
+
+</header>
+
+<router-outlet></router-outlet>

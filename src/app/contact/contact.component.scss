@@ -12,8 +12,37 @@ section {
 }
 
 .contact-me {
-  padding: 1rem 7% 4rem;
+  padding: 4rem 7% 4rem;
 }
 
+.contact-me form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-me form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.contact-me form .input-box input,
+.contact-me form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #323946;
+  border-radius: .8rem;
+  margin: .7rem 0;
+  margin-bottom: 0.1rem;
+}
+
+.contact-me form .input-box input {
+  width: 49%;
+}
 
 

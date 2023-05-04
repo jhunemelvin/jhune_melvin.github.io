@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'my-portfolio';
   faBars = faBars;
   faXmark = faXmark;
+  isMenuOpen = false;
 
   downloadMyFile() {
     const link = document.createElement('a');
@@ -22,4 +23,13 @@ export class AppComponent {
     link.remove();
     console.log('Download started');
   }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+
 }
