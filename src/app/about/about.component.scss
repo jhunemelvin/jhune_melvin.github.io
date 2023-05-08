@@ -1,6 +1,6 @@
 section {
   min-height: 100vh;
-  padding: 4rem 7% 1rem;
+  padding: 5rem 7% 1rem;
   color: #fff;
   background: #323946;
 
@@ -8,8 +8,7 @@ section {
 
 .heading {
   font-size: 3rem;
-
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-weight: 850;
 }
@@ -24,15 +23,102 @@ span {
   margin: auto;
 }
 
-
-
 .about-container h3 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
+.about-container h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.5rem;
+}
+
 .about-container p {
   text-align: center;
-  margin: 1.5rem 6% 2rem;
+  margin: 1.5rem 6% 0rem;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 1.5rem 0.5rem;
+  background: #0ef;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #0ef;
+  font-size: 1rem;
+  color: #1f242d;
+  letter-spacing: .05rem;
+  font-weight: 700;
+  transition: .5s ease;
+  margin: .8rem 0 0rem;
+
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 850;
+}
+
+.skill-container .skill-box {
+  flex: 1 1 30rem;
+  background: #323946;
+  padding: 0rem 0rem .5rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid #1f242d;
+  max-width: 12rem;
+  transition: .5s ease;
+}
+
+#code {
+  font-size: 5rem;
+  color: #0ef;
+}
+
+.section2 {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 5rem 2rem;
+}
+.readm-pic {
+  width: 70vw;
+}
+
+.about-container-2 {
+  margin-top: 5rem;
+}
+
+.about-container-2 h6 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
 }
