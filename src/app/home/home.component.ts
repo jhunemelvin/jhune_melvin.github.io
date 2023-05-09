@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -13,5 +13,5 @@ export class HomeComponent {
   facebookIcon = faFacebookF;
   twitterIcon = faTwitter;
   instagramIcon = faInstagram;
-
+  githubIcon = faGithub;
 }
