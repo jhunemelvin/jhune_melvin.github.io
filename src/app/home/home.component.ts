@@ -13,5 +13,5 @@ export class HomeComponent {
   facebookIcon = faFacebookF;
   twitterIcon = faTwitter;
   instagramIcon = faInstagram;
-  githubIcon = faGithub;
+  github = faGithub;
 }
