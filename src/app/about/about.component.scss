@@ -122,3 +122,68 @@ h3 {
   font-size: 1rem;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 765px ) {
+  .about {
+    padding: 1.5rem;
+  }
+
+  .about-container {
+    h4 {
+      font-size: 0.9rem;
+      margin: 1rem 0 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .readm-pic {
+    width: 60vw;
+    display: block;
+    margin: auto;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem 2rem;
+    gap: 1rem;
+  }
+
+  .about-container-2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+
+
+  }
+
+  #code {
+    font-size: 2rem;
+    color: #0ef;
+  }
+
+  .skill-container .skill-box {
+    flex: 1 1 30rem;
+    background: #323946;
+    padding: 0rem 0rem .5rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: .2rem solid #1f242d;
+    max-width: 6rem;
+    transition: .5s ease;
+  }
+
+  h3 {
+    font-size: .8rem;
+    font-weight: 500;
+  }
+
+  .about-img {
+    width: 10rem;
+
+  }
+
+
+}
