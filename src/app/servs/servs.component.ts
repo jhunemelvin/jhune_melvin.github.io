@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-servs',
@@ -8,5 +10,5 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 })
 export class ServsComponent {
   faCode = faCode;
-
+  penIcon = faPen;
 }
