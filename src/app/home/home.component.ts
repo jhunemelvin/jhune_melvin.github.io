@@ -8,7 +8,7 @@ import Typed from 'typed.js';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements AfterViewInit {
   facebookIcon = faFacebookF;
@@ -23,9 +23,12 @@ export class HomeComponent implements AfterViewInit {
       strings: ['Front-End Developer'],
       typeSpeed: 150,
       backSpeed: 150,
-      loop: true
+      loop: true,
     };
 
-    const typed = new Typed(this.el.nativeElement.querySelector('.typewriter'), options);
+    const typed = new Typed(
+      this.el.nativeElement.querySelector('.typewriter'),
+      options
+    );
   }
 }
